@@ -1,0 +1,332 @@
+body{
+    background-color: white;
+}
+
+#header{
+	
+    height: 120px;
+    width: 1400px;
+}
+
+
+#menu{
+    
+    height: 40px;
+}
+@charset "utf-8";
+            /* CSS Document */
+            
+            
+            body {
+                
+            
+            /* for pull-down menu to work in IE6*/
+            behavior:url("csshover2.htc");
+            
+            }
+            
+            /* pull-down mainmenu css */
+            .mainmenu{
+                float: left;
+                width: 100%;
+                padding: 0;
+            }
+            .mainmenu ul {
+                float: left;
+                width: 100%;
+                list-style: none;
+                line-height: 1;
+                color:#33ff00;
+                background:white;
+                padding: 0;
+                
+                
+                margin: 0 0 1em 0;
+            }
+            
+            .mainmenu a, .mainmenu a:visited {
+                display: block;
+            font-family:Arial, Helvetica, sans-serif;font-size:0.8em;font-weight:bold;font-style:normal;text-decoration:underline;
+                color: #3cff00;
+                text-decoration: none;
+                padding: 1em 1em;
+            }
+            .mainmenu ul ul a{
+                width:100%;
+                height:100%;
+            }
+            .mainmenu ul a{
+                width:1%;
+            }
+            
+            
+            .mainmenu li  {
+                float: left;
+                margin:0;
+                padding:0;
+            }
+            
+            .mainmenu ul li {float:left; position:relative;  }
+            .mainmenu ul li a {white-space:nowrap;}
+                
+            .mainmenu li ul {
+                position: absolute;
+                left: -999em;
+                height: auto;
+                width:15em;	
+                
+                background: #000080;
+                font-weight: normal;
+                border-width: 1px;
+                margin: 0;
+            }
+            
+            .mainmenu li li {
+                width:15em ;
+            }
+            
+            .mainmenu li li a{
+                width:13em ;
+            }
+            
+            .mainmenu li ul  {
+                margin: 0;
+            }
+            .mainmenu li ul ul {
+                margin: -2.8em 0 0 13.5em;
+            }
+            .ul_ch, 
+            .mainmenu li:hover ul ul,
+            .mainmenu li li:hover ul ul,
+            .mainmenu li li li:hover ul ul,
+            .mainmenu li li li li:hover ul ul,
+            .mainmenu li li li li li:hover ul ul
+            {
+                left: -999em;
+            }
+            .mainmenu li:hover ul,
+            .mainmenu li li:hover ul,
+            .mainmenu li li li:hover ul,
+            .mainmenu li li li li:hover ul,
+            .mainmenu li li li li li:hover ul
+            {
+                left: auto;
+            }
+            .mainmenu li:hover>ul.ul_ch   
+            {
+                left: auto;
+            }
+            
+            .mainmenu li:hover{
+                background: #FF0000;
+            }
+            
+            .mainmenu li:hover a,.mainmenu li:hover a:visited,.mainmenu li:hover a:hover,.mainmenu li a:hover{
+                color:#FFFF00;
+            }
+            .mainmenu li:hover li a, .mainmenu li li:hover li a, 
+            .mainmenu li li li:hover li a, .mainmenu li li li li:hover li a,
+            .mainmenu li:hover li a:visited, .mainmenu li li:hover li a:visited, 
+            .mainmenu li li li:hover li a:visited, .mainmenu li li li li:hover li a:visited
+            {
+                color:#FFFF00;
+            }
+            .mainmenu li li:hover, .mainmenu li li li:hover, 
+            .mainmenu li li li li:hover , .mainmenu li li li li li:hover , .mainmenu li li li li li li:hover 
+            {
+                background: #B90000;
+                z-index:9999;
+            }
+            .mainmenu li li:hover a,.mainmenu li li li:hover a, 
+            .mainmenu li li li li:hover a, .mainmenu li li li li li:hover a
+            {
+                color: #FFFF00; 
+            }
+            
+            .mainmenu ul ul a, .mainmenu ul ul a:visited,
+            .mainmenu li li a, .mainmenu li li a:visited
+            {
+                color: #FFFF00;
+            }
+            .mainmenu ul ul a:hover,
+            .mainmenu li:hover li:hover a,.mainmenu li:hover li:hover a:visited ,
+            .mainmenu li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover a:visited,
+            .mainmenu li:hover li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover li:hover a:visited ,
+            .mainmenu li:hover li:hover li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover li:hover li:hover a:visited,
+            .mainmenu li:hover li:hover li:hover li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover li:hover li:hover li:hover a:visited{
+                color: #FFFF00;
+            }
+            .mainmenu li:hover li:hover li a,.mainmenu li:hover li:hover li a:visited ,
+            .mainmenu li:hover li:hover li:hover li a,.mainmenu li:hover li:hover li:hover li a:visited,
+            .mainmenu li:hover li:hover li:hover li:hover li a,.mainmenu li:hover li:hover li:hover li:hover li a:visited,
+            .mainmenu li:hover li:hover li:hover li:hover li:hover li a,.mainmenu li:hover li:hover li:hover li:hover li:hover li a:visited{
+                color: #FFFF00;
+            }
+            
+            
+            /* end of mainmenu css */
+			.bo{
+	            border: 1px solid white;
+				height: 120px;
+				width: 1400px;
+                background-color: black;
+			}
+            #act{
+                border: 1px solid rgb(60, 243, 91);
+				height: 40px;
+				width: 170px;
+                background-color: rgb(31, 226, 31);
+                margin-top: 40px;
+                margin-left: 10px;
+                border-radius: 10px 10px 10px 10px;
+                text-align: center;
+                font-size: x-large;
+			}
+            #act1{
+                border: 1px solid rgb(244, 242, 248);
+				height: 40px;
+				width: 100px;
+                background-color: rgb(230, 227, 233);
+                margin-top:-40px;
+                margin-left: 1020px;
+                border-radius: 10px 10px 10px 10px;
+                text-align: center;
+                font-size: x-large;
+			}
+            #act2{
+                border: 1px solid rgb(229, 240, 223);
+				height: 40px;
+				width: 100px;
+                background-color: rgb(220, 231, 220);
+                margin-top: -40px;
+                margin-left: 700px;
+                border-radius: 10px 10px 10px 10px;
+                text-align: center;
+                font-size: x-large;
+			}
+            #act3{
+                border: 1px solid rgb(205, 219, 207);
+				height: 40px;
+				width: 100px;
+                background-color: rgb(209, 219, 209);
+                margin-top: -40px;
+                margin-left: 400px;
+                border-radius: 10px 10px 10px 10px;
+                text-align: center;
+                font-size: x-large;
+			}
+            #CORPS{
+               
+				height: 1800px;
+				width: 1400px; 
+			}
+            .ro{
+                
+				height: 470px;
+				width: 700px; 
+                margin-left:700px;
+                margin-top: 120px;
+                 
+			}
+            .ros{
+                
+				height: 450px;
+				width:670px; 
+                margin-top: -430px;
+                
+			}
+            .roj{
+                
+				height: 470px;
+				width: 700px; 
+                margin-left:70px;
+                 
+			}
+            .rose{
+                
+				height: 450px;
+				width:670px; 
+                margin-top: -470px;
+                margin-left: 700px;
+                
+			}
+            .rojS{
+                
+				height: 470px;
+				width: 700px; 
+                margin-left:70px;
+                 
+			}
+            .roseY{
+                
+				height: 450px;
+				width:670px; 
+                margin-top: -430px;
+                margin-left: 800px;
+                
+			}
+            #footer{
+                border: 2px solid black;
+				height: 300px;
+				width:1400px; 
+                background-color: black;
+                
+			}
+            .titre1
+{
+	font-size: 15px;
+	background-color:rgb(8, 7, 7);
+	color: rgb(240, 238, 238);
+	font-family:'Courier New', Courier, ;
+	font-weight: bold;
+	margin-top: 10px;
+	border-radius: 4px;
+}
+
+.pied{
+    display: inline-block;
+	color: blanchedalmond;
+	width: 325px;
+}
+.titre{
+    display: inline-block;
+	color: rgb(5, 5, 5);
+	font-size: xx-large;
+
+}
+.rg{
+               
+    height: 200px;
+width: 200px; 
+    margin-left:70px;
+     
+}
+.rt{
+     
+    height: 200px;
+    width:200px; 
+    margin-top: -210px;
+    margin-left: 400px;
+    
+}
+.rU{
+              
+   height: 200px;
+width: 200px; 
+margin-top: -210px;
+   margin-left: 700px;
+}
+.rK{
+   
+   height: 200px;
+   width:200px; 
+   margin-top: -210px;
+   margin-left: 1000px;
+   
+}
+
+           
+                
+		
+
+			
